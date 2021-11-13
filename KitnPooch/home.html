@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-za">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Kit n Pooch</title>
+		<link rel="icon" href="media/paw.png">
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+		<script src="scripts.js"></script>
+		
+	</head>
+
+	<body onload="updateWishlist()">
+
+		<!-- Header -->
+		<div>
+		  <a href="home.html"><img class="header" src="media/header.png"></a>
+		</div>
+
+		<!-- Navigation -->
+		<nav class="nav-bar">
+		  <a href="home.html" class="active button nav-bar-item"><img class="nav-icon" src="media/icon-home.png"> Home</a>
+		  <a href="products.html" class="button nav-bar-item"><img class="nav-icon" src="media/icon-products.png"> Products</a>
+		  <a href="facts.html" class="button nav-bar-item"><img class="nav-icon" src="media/icon-facts.png"> Fun Facts</a>
+		  <a href="about.html" class="button nav-bar-item"><img class="nav-icon" src="media/icon-about.png"> About Us</a>
+		  <a href="contact.html" class="button nav-bar-item"><img class="nav-icon" src="media/icon-contact.png"> Contact</a>
+		</nav>
+		
+		<!-- Webpage Content -->
+		<div class="content">
+		
+			<!-- Welcome Message -->
+			<div class="welcome">
+				<h2>Make your pet feel as special as they make you feel!</h2>
+			</div>
+			
+			<!-- Customer Instructions -->
+			<div class="catalogue">
+			
+				<div class="text-block">
+					<h1 class="heading">Welcome to Kit n Pooch, a leading provider of pet products and pet tidbits!</h1>
+					<p class="info">Find the perfect clothes, toys or food for your kit or pooch! <a href="products.html" class="link">Start shopping &#10148;</a>
+					<br>Find out more about kits and pooches! <a href="facts.html" class="link">Start learning &#10148;</a></p>
+				</div>
+				
+			</div>
+			
+			<!-- Home Page Videos -->
+			<div class="catalogue">
+				<div class="text-block">
+				
+					<h1 class="heading">Check out what our community's kits and pooches are up to!</h1>
+					
+					<video class="video" controls>
+						<source src="media/DancingPuppy.mp4" type="video/mp4">
+						<source src="media/DancingPuppy.ogv" type="video/ogv">
+						Your browser does not support HTML video.
+					</video>
+					
+					<video class="video" controls>
+						<source src="media/TwoKitties.mp4" type="video/mp4">
+						<source src="media/TwoKitties.ogv" type="video/ogv">
+						Your browser does not support HTML video.
+					</video>
+					
+					<iframe class="video" src="https://www.youtube.com/embed/8hPFbj-RxmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					<iframe class="video" src="https://www.youtube.com/embed/OWbtxdq5rvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					<iframe class="video" src="https://www.youtube.com/embed/bsaAOun-soc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+			
+			<!-- Customer Wish List -->
+			<div class="catalogue">
+				<div class="text-block">
+				
+					<h1 class="heading">Want something that we don't sell? Send us your product wish list!</h1>
+					
+					<div class="list-box float">
+						<p class="contact"><b>Your current wish list:</b></p>
+						<textarea type="text" rows="13" id="wishlist" class="wishlist"></textarea>
+					</div>
+					
+					<div class="list-box float">
+						<p class="contact"><b>Make changes to your wish list:</b></p>
+						<form>
+							<input required type="text" id="wishitem" class="wish-item" placeholder="Any pet product your heart desires"><br>
+							<input type="button" value="Add to wishlist" class="wish-button" onclick="addToWishlist()"><br><br>
+							<input type="button" value="Remove last item" class="wish-button" onclick="removeFromList()">
+							<input type="button" value="Clear wishlist" class="wish-button" onclick="clearWishlist()">
+							<input type="button" value="Send wishlist" class="wish-button">
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- Home Page Image -->
+			<div class="catalogue">
+			
+				<img src="media/background.jpg">
+				
+			</div>
+		
+		</div>
+		
+		<!-- Footer -->
+		<div class="footer">
+		  <a href="home.html"><img src="media/logo.png"><a/>
+		</div>
+
+	</body>
+
+</html>
